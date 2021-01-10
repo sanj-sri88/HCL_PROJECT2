@@ -1,0 +1,28 @@
+<section class="abc">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center">
+                    Part Record
+                </h1>
+                <table class="table table-striped table-bordered table-sm row-border hover" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>cmf number</th>
+                        <th>Category</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let group of partrecords">
+                        <td>{{group.id}}</td>
+                        <td>{{group.firstName}}</td>
+                        <td>{{group.lastName}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  </section>
+  
